@@ -1,0 +1,106 @@
+.center-cropped {
+  object-fit: cover; /* Do not scale the image */
+  object-position: center; /* Center the image within the element */
+  height: 200px;
+  width: 200px;
+  display: block;
+margin: 0 auto;
+}
+
+
+.img-thumbnail {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  margin: 10px;
+}
+.img-thumbnail img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+.img-thumbnail img.portrait {
+  width: 100%;
+  height: auto;
+}
+
+
+
+
+.obus-carousel-multi .carousel-inner .tot {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    margin: 10px;
+    position: relative;
+    background-color: #fff;
+}
+.obus-carousel-multi .carousel-inner .tot img {
+    position: absolute;
+    left: -1000%;
+    right: -1000%;
+    top: -1000%;
+    bottom: -1000%;
+    margin: auto;
+    min-height: 100%;
+    width: 500px;
+    min-width: 100%;
+}
+
+.obus-carousel-multi .carousel-inner .tot-bg {
+  width: 100%;
+  height: 100%;
+  min-height: 200px;
+  margin: 0 auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 200%;
+}
+
+
+
+.obus-carousel-multi .carousel-inner > .item {
+  -webkit-transition: 0.6s ease-in-out all;
+  transition: 0.6s ease-in-out all;
+}
+.obus-carousel-multi .carousel-inner .active.left {
+  left: -25%;
+}
+.obus-carousel-multi .carousel-inner .active.right {
+  left: 25%;
+}
+.obus-carousel-multi .carousel-inner .next {
+  left: 25%;
+}
+.obus-carousel-multi .carousel-inner .prev {
+  left: -25%;
+}
+.obus-carousel-multi .carouse-control.left,
+.obus-carousel-multi .carouse-control.right {
+  background-image: none;
+}
+@media all and (transform-3d), (-webkit-transform-3d) {
+  .obus-carousel-multi .carousel-inner > .item {
+    -webkit-transition: 0.6s ease-in-out all;
+    transition: 0.6s ease-in-out all;
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+    -webkit-perspective: none;
+    -webkit-transform: none!important;
+    transform: none!important;
+  }
+}
+
+
+
+
+
+
+
+
